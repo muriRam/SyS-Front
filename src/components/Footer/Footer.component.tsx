@@ -5,7 +5,9 @@ import styles from "./Footer.module.css";
 const Footer = () => {
     return (
         <div className={styles.footer}>
-            <h3>ESTE ES EL FOOTER</h3>
+            <span>S&S Soldaduras y Servicios</span>
+
+            <span>Sistema interno v1.0</span>
         </div>
     )
 }
