@@ -1,11 +1,13 @@
-.main{
+.container{
     width: 100%;
     display: flex;
+    flex: 1;
     flex-direction: column;
-     justify-content: center; /* Centrado vertical opcional */
-  align-items: center;
+    align-items: center;
     background-color: var(--color-background);
     color: var( --color-text);
+    padding: 2rem;
+    gap: 2rem;
 }
 
 .section{
@@ -13,4 +15,25 @@
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
+}
+
+.searchSection {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem 0;
+}
+
+.templatesSection {
+  flex: 1;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 1rem;
 }
