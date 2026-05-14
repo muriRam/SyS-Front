@@ -2,21 +2,31 @@
 
 import styles from "./NavBar.module.css";
 import Image from "next/image";
+import { UserCircle } from "lucide-react";
 
 const Navbar = () => {
   return (
         <nav className={styles.navbar}>
-            <div className={styles.logo}>
+            <div className={styles.leftSection}>
                 <Image 
                     src= "/logoSyS.png" 
                     alt= "SySLogo"
-                    width={120}
-                    height={40}
+                    width={140}
+                    height={90}
+                    className={styles.logo}
                     
                 />
             </div>
+
+            <div className={styles.centerSection}>
+                <h1 className={styles.title}>S&S Soldaduras y Servicios</h1>
+            </div>
             
-            <h3>Esta es la NavBar</h3>
+             <div className={styles.rightSection}>
+                <button className={styles.profileButton}>
+                <UserCircle size={38} />
+                </button>
+            </div>
         </nav>
     )
 }
