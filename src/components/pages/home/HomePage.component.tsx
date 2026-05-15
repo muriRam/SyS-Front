@@ -1,13 +1,14 @@
 import styles from "./HomePage.module.css";
+import SearchSection from "@/components/Search/SearchSection.component";
+import TemplateSection from "@/components/Templates/TemplateSection/TemplateSection.component";
 
 export const HomePage = () => (
     <div className={styles.container}>
-        <section className={styles.searchSection}>
-            <h1> Aca va la search var</h1>
-        </section>
-        <section className={styles.templatesSection}>
-            <h2> aca deberian estar peque;as vistas que funcionen como accesos directos a los templates</h2>
-        </section>
+        <div className={styles.contentWrapper}>
+            <SearchSection />
+            <TemplateSection />
+        </div>
+
     </div>
 )
 
